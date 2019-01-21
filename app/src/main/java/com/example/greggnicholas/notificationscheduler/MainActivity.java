@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if (progress > 0) {
-                    seekBarProgress.setText( getString(R.string.seekbarS));
+                    seekBarProgress.setText( progress + getString(R.string.seekbarS));
                 } else {
                     seekBarProgress.setText(getString(R.string.notset));
                 }
