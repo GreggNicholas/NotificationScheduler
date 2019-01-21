@@ -15,8 +15,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final int JOB_ID = 0;
-    private Button scheduleJobButton;
-    private Button cancelJob;
     private Switch deviceIdleSwitch;
     private Switch deviceChargingSwitch;
     private SeekBar seekBar;
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RadioGroup networkOptions = findViewById(R.id.networkOptions_radio);
         deviceIdleSwitch = findViewById(R.id.idleSwitch);
         deviceChargingSwitch = findViewById(R.id.chargingSwitch);
         seekBar = findViewById(R.id.seekBar);
@@ -39,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if (progress > 0) {
-                    seekBarProgress.setText( progress + getString(R.string.seekbarS));
+                    seekBarProgress.setText(progress + getString(R.string.seekbarS));
                 } else {
                     seekBarProgress.setText(getString(R.string.notset));
                 }
