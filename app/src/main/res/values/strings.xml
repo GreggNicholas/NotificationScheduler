@@ -10,7 +10,7 @@
     <string name="device_idle">Device Idle</string>
     <string name="device_charging">Device Charging</string>
     <string name="override_deadline">Override Deadline:</string>
-    <string name="notset">Not set :</string>
+    <string name="notset">Not set:</string>
     <string name="seekbarS">s</string>
     <string name="jobservice">Job Service</string>
     <string name="jobrunning">Job Running</string>

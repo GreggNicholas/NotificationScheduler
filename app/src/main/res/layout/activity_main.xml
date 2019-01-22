@@ -96,19 +96,19 @@
         android:layout_margin="4dp" />
 
     <Button
+        android:id="@+id/schedulejob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="4dp"
-        android:onClick="schedulejob"
         android:text="@string/schedule_job" />
 
     <Button
+        android:id="@+id/cancelJobs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="4dp"
-        android:onClick="cancelJobs"
         android:text="@string/canceljobs" />
 
 
